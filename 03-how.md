@@ -5,37 +5,80 @@ layout: section
 ---
 layout: none
 ---
-<SlidevVideo autoplay controls="false" style="width: 100%">
+<SlidevVideo autoplay style="width: 100%">
   <source src="/switcher.hd.1080p.mp4" type="video/mp4" />
   <p>
     Your browser does not support videos. You may download it
     <a href="/switcher.hd.1080p.mp4">here</a>.
   </p>
 </SlidevVideo>
----
-layout: center
----
 
-<v-switch>
-  <template #0>
+---
+layout: default
+---
+# Big Picture
+
+<div style="height: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center">
 
 ```mermaid {scale: 1.5}
 flowchart LR
-Cameras -- HDMI --> ATEM -- USB --> Computer -- Webcam --> App
-Computer -- Mic --> App
-``` 
-
-  </template>
-  <template #1>
-
-```mermaid {scale: 1.5}
-flowchart LR
-Cameras -- HDMI --> ATEM -- USB --> Computer -- Webcam --> App
-Computer -- Mic --> App
-Mics -- Jack --> ATEM
+Inputs[Input Sources] --> ATEM --> Output[Content Output]
 ```
 
-  </template>
-</v-switch>
+</div>
 
+---
+layout: two-cols-header
+---
+# Input Sources
+Takes inputs for processing
+
+::left::
+
+## Video, e.g.
+- Camera
+- Computer
+- Tablet
+
+## Audio, e.g.
+- Microphone
+- Audio Interface
+
+<br/>
+<br/>
+
+::right::
+
+```mermaid {scale: 1.5}
+flowchart LR
+Video -- HDMI --> ATEM
+Audio -- Jack --> ATEM
+```
+
+---
+layout: two-cols-header
+layoutClass: gap-16
+---
+
+# Content Output
+Mixes inputs into a single output
+
+::left::
+
+```mermaid {scale: 1.5}
+flowchart LR
+ATEM -- USB --> Computer
+ATEM -- Net --> Stream((Stream\nTarget))
+```
+
+::right::
+
+## Webcam, e.g.
+- Zoom
+- Google Meet
+- Teams
+
+## Streaming, e.g.
+- YouTube
+- LinkedIn
 ---

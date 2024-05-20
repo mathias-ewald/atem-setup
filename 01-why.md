@@ -5,7 +5,7 @@ layout: section
 # Why Anything?
 
 ---
-layout: image-right
+layout: image-left
 image: home-office.jpg
 ---
 
@@ -28,7 +28,9 @@ image: home-office.jpg
 <br/>
 <br/>
 
+<v-click>
 Quality, Effects, Variety
+</v-click>
 
 ---
 layout: image-right
@@ -68,8 +70,12 @@ layout: section
 ---
 # Why Hardware?
 ---
-layout: two-cols
+layout: two-cols-header
 ---
+# Quick Comparison 
+
+::left::
+
 ```mermaid {scale: 1, alt: 'A simple sequence diagram'}
 mindmap
   root((Mixer))

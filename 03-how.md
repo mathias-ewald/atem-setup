@@ -54,6 +54,40 @@ flowchart LR
 Video -- HDMI --> ATEM
 Audio -- Jack --> ATEM
 ```
+---
+layout: two-cols
+---
+# Audio Interface
+Takes inputs for processing
+
+## Microphones
+- High quality XLR inputs
+
+## Others (optional)
+- Bluetooth
+- Computer
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+::right::
+
+
+<div style="display: flex !important; flex-direction: column !important; align-items: center !important;">
+
+```mermaid {scale: 1.25}
+flowchart LR
+Mixer[Audio\nMixer] -- Jack --> ATEM
+Mic -- XLR --> Mixer
+PC -- USB --> Mixer
+Phone -- BT --> Mixer
+```
+
+<img src="/shuresm7b.png" width="200px" style="transform: rotate(180deg) scale(-1, 1);">
+
+</div>
 
 ---
 layout: two-cols-header
@@ -85,6 +119,7 @@ ATEM -- USB --> SSD
 ---
 layout: two-cols
 ---
+
 # Function Primitives
 Basic functions can be combined
 
@@ -136,50 +171,54 @@ Basic functions can be combined
         <figcaption style="font-size: 50%; text-align: center;">Logo with Downstream Key</figcaption>
     </figure>
 </div>
+
 ---
 ---
 # Transitions
-Basic Examples
+Replace one input source with another
 
-<div class="mt-10" style="width: 100%; display: grid; grid-template-columns: repeat(3,1fr); grid-template-rows: repeat(3,auto); grid-gap:20px 30px;">
+<div class="mt-10" style="width: 100%; display: grid; grid-template-columns: repeat(3,1fr); grid-template-rows: repeat(2,auto); grid-gap:20px 30px;">
     <div style="display: flex; flex-direction: column; align-items: center;">
-        <SlidevVideo autoplay loop controls><source src="/cut.mp4" type="video/mp4" /></SlidevVideo>
+        <SlidevVideo autoplay loop><source src="/cut.mp4" type="video/mp4" /></SlidevVideo>
         <span class="text-xs">Cut (None)</span>
     </div>
     <div style="display: flex; flex-direction: column; align-items: center;">
-        <SlidevVideo autoplay loop controls><source src="/mix.mp4" type="video/mp4" /></SlidevVideo>
+        <SlidevVideo autoplay loop><source src="/mix.mp4" type="video/mp4" /></SlidevVideo>
         <span class="text-xs">Mix</span>
     </div>
     <div style="display: flex; flex-direction: column; align-items: center;">
-        <SlidevVideo autoplay loop controls><source src="/dip.mp4" type="video/mp4" /></SlidevVideo>
+        <SlidevVideo autoplay loop><source src="/dip.mp4" type="video/mp4" /></SlidevVideo>
         <span class="text-xs">Dip (to black)</span>
     </div>
     <div style="display: flex; flex-direction: column; align-items: center;">
-        <SlidevVideo autoplay loop controls><source src="/wipe.mp4" type="video/mp4" /></SlidevVideo>
+        <SlidevVideo autoplay loop><source src="/wipe.mp4" type="video/mp4" /></SlidevVideo>
         <span class="text-xs">Wipe (white circle)</span>
     </div>
     <div style="display: flex; flex-direction: column; align-items: center;">
-        <SlidevVideo autoplay loop controls><source src="/dve.mp4" type="video/mp4" /></SlidevVideo>
+        <SlidevVideo autoplay loop><source src="/dve.mp4" type="video/mp4" /></SlidevVideo>
         <span class="text-xs">DVE (up)</span>
     </div>
 </div>
 ---
 ---
-# Keyers
+# Upstream & Downstream Keys
 Layers that add transparency
 
-<div class="mt-10" style="width: 100%; display: grid; grid-template-columns: repeat(3,1fr); grid-template-rows: repeat(3,auto); grid-gap:50px 30px;">
+<div class="mt-10" style="width: 100%; display: grid; grid-template-columns: repeat(3,1fr); grid-template-rows: repeat(2,auto); grid-gap:50px 30px;">
    <div style="display: flex; flex-direction: column; align-items: center;">
-        <SlidevVideo autoplay loop controls><source src="/chroma.mp4" type="video/mp4" /></SlidevVideo>
+        <SlidevVideo autoplay loop><source src="/chroma.mp4" type="video/mp4" /></SlidevVideo>
         <span class="text-xs">Chroma (green screen)</span>
     </div>
     <div style="display: flex; flex-direction: column; align-items: center;">
-        <SlidevVideo autoplay loop controls><source src="/pattern.mp4" type="video/mp4" /></SlidevVideo>
+        <SlidevVideo autoplay loop><source src="/pattern.mp4" type="video/mp4" /></SlidevVideo>
         <span class="text-xs">Pattern (Circle)</span>
     </div>
     <div style="display: flex; flex-direction: column; align-items: center;">
-        <SlidevVideo autoplay loop controls><source src="/luma.mp4" type="video/mp4" /></SlidevVideo>
+        <SlidevVideo autoplay loop><source src="/luma.mp4" type="video/mp4" /></SlidevVideo>
         <span class="text-xs">Luma (Black + Crop)</span>
     </div>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <SlidevVideo autoplay loop><source src="/dve-key.mp4" type="video/mp4" /></SlidevVideo>
+        <span class="text-xs">DVE (Shadow + Border)</span>
+    </div>
 </div>
----

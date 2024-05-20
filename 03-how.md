@@ -49,7 +49,7 @@ Takes inputs for processing
 
 ::right::
 
-```mermaid {scale: 1.5}
+```mermaid {scale: 1.25}
 flowchart LR
 Video -- HDMI --> ATEM
 Audio -- Jack --> ATEM
@@ -65,10 +65,11 @@ Mixes inputs into a single output
 
 ::left::
 
-```mermaid {scale: 1.5}
+```mermaid {scale: 1.25}
 flowchart LR
 ATEM -- USB --> Computer
-ATEM -- Net --> Stream((Stream\nTarget))
+ATEM -- Net --> Stream
+ATEM -- USB --> SSD
 ```
 
 ::right::
@@ -81,4 +82,53 @@ ATEM -- Net --> Stream((Stream\nTarget))
 ## Streaming, e.g.
 - YouTube
 - LinkedIn
+---
+layout: two-cols
+---
+# Features Overview
+
+<style>
+.footnotes-sep {
+    visibility: hidden;
+}
+</style>
+
+<br/>
+
+### Video
+- Transitions <span style="color: grey">(Cut, Mix, Wipe, Dip, DVE, Stinger<sup>1</sup>)</span>
+- Upstream Key <span style="color: grey">(Luma, Chroma, Pattern, DVE)</span>
+- Downstream Key <span style="color: grey">(Bugs, Logos, Lower Thirds)</span>
+- Media Player <span style="color: grey">(Images, Clips<sup>1</sup>)</span>
+- Super Source <sup>2</sup>
+- Color Generators
+
+<br/>
+
+### Audio
+- Equalizer <span style="color: grey">(6 band)</span>
+- Dynamics <span style="color: grey">(Expander, Gate, Compressor, Limiter)</span>
+
+<div style="font-size: 60%; margin-top: 15px;">
+[1]: ATEM Constellation or higher<br/>
+[2]: ATEM Mini Extreme or higher
+</div>
+
+::right::
+
+<div style="display: flex; flex-direction: column; align-items: center; gap: 50px">
+    <figure style="width: 50%">
+        <img src="/usk.jpg" alt="Trulli">
+        <figcaption style="font-size: 50%; text-align: center;">Green screen with Chroma Key</figcaption>
+    </figure>
+    <figure style="width: 50%">
+        <img src="/dsk.jpg" alt="Trulli">
+        <figcaption style="font-size: 50%; text-align: center;">Logo with Downstream Key</figcaption>
+    </figure>
+</div>
+
+::bottom::
+# Footbar oodoaskjdlkasjdlkasj
+
+
 ---

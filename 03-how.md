@@ -85,7 +85,8 @@ ATEM -- USB --> SSD
 ---
 layout: two-cols
 ---
-# Features Overview
+# Function Primitives
+Basic functions can be combined
 
 <style>
 .footnotes-sep {
@@ -95,7 +96,9 @@ layout: two-cols
 
 <br/>
 
-### Video
+## Video
+<div class="text-sm">
+
 - Transitions <span style="color: grey">(Cut, Mix, Wipe, Dip, DVE, Stinger<sup>1</sup>)</span>
 - Upstream Key <span style="color: grey">(Luma, Chroma, Pattern, DVE)</span>
 - Downstream Key <span style="color: grey">(Bugs, Logos, Lower Thirds)</span>
@@ -103,11 +106,18 @@ layout: two-cols
 - Super Source <sup>2</sup>
 - Color Generators
 
+</div>
+
+
 <br/>
 
-### Audio
+## Audio
+<div class="text-sm">
+
 - Equalizer <span style="color: grey">(6 band)</span>
 - Dynamics <span style="color: grey">(Expander, Gate, Compressor, Limiter)</span>
+
+</div>
 
 <div style="font-size: 60%; margin-top: 15px;">
 [1]: ATEM Constellation or higher<br/>
@@ -127,8 +137,16 @@ layout: two-cols
     </figure>
 </div>
 
-::bottom::
-# Footbar oodoaskjdlkasjdlkasj
+---
+---
+# Transitions
+Basic Examples
 
-
+<div style="width: 100%; display: grid; grid-template-columns: repeat(3,1fr); grid-template-rows: repeat(3,auto); grid-gap:50px 30px;">
+   <SlidevVideo autoplay loop><source src="/cut.mp4" type="video/mp4" /></SlidevVideo>
+   <SlidevVideo autoplay loop><source src="/mix.mp4" type="video/mp4" /></SlidevVideo>
+   <SlidevVideo autoplay loop><source src="/dip.mp4" type="video/mp4" /></SlidevVideo>
+   <SlidevVideo autoplay loop><source src="/wipe.mp4" type="video/mp4" /></SlidevVideo>
+   <SlidevVideo autoplay loop><source src="/dve.mp4" type="video/mp4" /></SlidevVideo>
+</div>
 ---

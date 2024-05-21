@@ -12,7 +12,6 @@ layout: none
     <a href="/switcher.hd.1080p.mp4">here</a>.
   </p>
 </SlidevVideo>
-
 ---
 layout: default
 ---
@@ -96,6 +95,7 @@ Takes inputs for processing
 ## Others (optional)
 - Bluetooth
 - Computer
+- Sound Effects
 
 <br/>
 <br/>
@@ -245,6 +245,8 @@ Layers that add transparency
 layout: default
 ---
 # Controlling The ATEM
+Lot's of buttons + software
+
 <br/>
 
 <div style="display: flex; flex-direction: row; gap: 20px; margin-bottom: -50px;">
@@ -255,31 +257,4 @@ layout: default
 <div style="display: flex; flex-direction: row; justify-content: center; z-index: 100;">
 <img style="width: 45%" src="/atem-mini-extreme.png">
 </div>
----
-layout: default
----
-# ATEM Macros
-Image background with USK circle pattern
-
-```xml {1|2-16|17-18}{lines:true}
-<Op id="PreviewInput" mixEffectBlockIndex="0" input="MediaPlayer1"/>
-<Op id="KeyType" mixEffectBlockIndex="0" keyIndex="0" type="Pattern"/>
-<Op id="KeyFillInput" mixEffectBlockIndex="0" keyIndex="0" input="Camera1"/>
-<Op id="PatternKeyPattern" mixEffectBlockIndex="0" keyIndex="0" pattern="CircleIris"/>
-<Op id="PatternKeyInvert" mixEffectBlockIndex="0" keyIndex="0" invert="False"/>
-<Op id="PatternKeySize" mixEffectBlockIndex="0" keyIndex="0" size="1.0"/>
-<Op id="PatternKeySoftness" mixEffectBlockIndex="0" keyIndex="0" softness="0.0"/>
-<Op id="PatternKeySymmetry" mixEffectBlockIndex="0" keyIndex="0" symmetry="0.8"/>
-<Op id="PatternKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="0.5"/>
-<Op id="PatternKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="0.5"/>
-<Op id="KeyMaskEnable" mixEffectBlockIndex="0" keyIndex="0" enable="False"/>
-<Op id="KeyFlyEnable" mixEffectBlockIndex="0" keyIndex="0" enable="True"/>
-<Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="13.47"/>
-<Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="-7.25"/>
-<Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="0.61"/>
-<Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="0.61"/>
-<Op id="TransitionSource" mixEffectBlockIndex="0" source="Background, Key1"/>
-<Op id="CutTransition" mixEffectBlockIndex="0"/>
-```
-
 ---

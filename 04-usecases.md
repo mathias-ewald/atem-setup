@@ -93,6 +93,8 @@ layout: two-cols-header
 1. Set background as main input source
 2. Enable Chroma USK and configure according to your current lighting situation
 
+<br/>
+
 
 ::right::
 
@@ -104,7 +106,7 @@ MP[Media\nPlayer] -.-> ATEM
 ---
 layout: two-cols-header
 ---
-# Logo
+# Speaker w/ Logo
 
 ::left::
 ## Prereqs
@@ -115,13 +117,21 @@ layout: two-cols-header
 <br/>
 
 ## Config
-- Enable DSK with MediaPlayer as Fill/Key
+- Camera as main input source
+- Load image into Media Player
+- Enable Downstream Key
 - Configure DSK for image
+
+
+<br/>
+<br/>
+
 
 ::right::
 
 ```mermaid {scale: 1.5}
 flowchart LR
+Camera --> ATEM
 MP[Media\nPlayer] -.-> ATEM
 ```
 ---
@@ -138,8 +148,9 @@ layout: two-cols-header
 <br/>
 
 ## Config
-1. Enable DSK with video
-2. Start video
+1. Camera as main input source
+2. Enable DSK with video
+3. Start video
 
 <br/>
 

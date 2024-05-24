@@ -83,6 +83,11 @@ image: /desk.jpg
 - Samsung Galaxy Tab S9
 - Elgato Green Screen Rollup
 - Some mounting gear
+
+<v-click at="1">
+<Arrow x1="570" y1="170" x2="250" y2="460" width="5" color="yellow" />
+</v-click>
+
 ---
 layout: center
 ---

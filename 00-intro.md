@@ -76,13 +76,12 @@ image: /desk.jpg
 - Glide Gear Teleprompter
 - Lilliput Field Monitor
 - BMD Hyperdeck Studio HD Plus
-- Elgato StreamDecks
+- 2x Elgato StreamDeck
 - 2x Elgato KeyLight
 - Elgato Wave Arm LP
 - Apple Mac Mini Studio
 - Samsung Galaxy Tab S9
 - Elgato Green Screen Rollup
-- Some mounting gear
 
 <v-click at="1">
 <Arrow x1="570" y1="170" x2="250" y2="460" width="5" color="yellow" />

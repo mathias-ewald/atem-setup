@@ -164,15 +164,15 @@ Basic functions can be combined
 <br/>
 
 ## Video
+- Preview / Program
 - Transitions <span style="color: grey">(Cut, Mix, Wipe, Dip, DVE, Stinger<sup>1</sup>)</span>
 - Upstream Key <span style="color: grey">(Luma, Chroma, Pattern, DVE)</span>
 - Downstream Key <span style="color: grey">(Bugs, Logos, Lower Thirds)</span>
 
 ## Audio
+- HDMI + Audio Jack
 - Equalizer <span style="color: grey">(6 band)</span>
 - Dynamics <span style="color: grey">(Expander, Gate, Compressor, Limiter)</span>
-
-<br/>
 
 <div style="font-size: 60%; margin-top: 15px;">
 [1]: ATEM Constellation or higher<br/>
